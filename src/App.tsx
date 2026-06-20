@@ -299,7 +299,7 @@ export default function App() {
                       </p>
                     </div>
                     <a
-                      href="/resume_sample.json"
+                      href={`${import.meta.env.BASE_URL}resume_sample.json`}
                       download="resume_sample.json"
                       className="mt-2 block text-center bg-zinc-800 hover:bg-zinc-700 text-white font-bold py-2 px-3 rounded text-[10px] uppercase tracking-wider border border-zinc-700"
                     >
