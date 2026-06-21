@@ -35,6 +35,7 @@ export const EducationItemSchema = z.object({
   studyType: z.string().optional().or(z.literal('')),
   startDate: z.string().optional().or(z.literal('')),
   endDate: z.string().optional().or(z.literal('')),
+  // Can be GPA, CGPA, percentage, etc. (e.g. "Percentage: 98%", "CGPA: 8.67", or "3.92 GPA")
   score: z.string().optional().or(z.literal('')),
   location: z.string().optional().or(z.literal('')),
   highlights: z.array(z.string()).optional(),
@@ -158,7 +159,7 @@ export function getDefaultResumeTemplate(): Resume {
         studyType: 'Bachelor of Science',
         startDate: '2022-09',
         endDate: '2026-06',
-        score: '3.92 GPA',
+        score: 'GPA: 3.92',
         highlights: [
           'Relevant Coursework: Data Structures & Algorithms, Systems Programming, Database Systems, Web Development',
           'Teaching Assistant for CSE 373 (Data Structures & Algorithms), guiding 30+ students in weekly sessions',

@@ -401,7 +401,7 @@ export default function ResumePreview({ resumeData, settings, zoom = 1.1 }: Resu
                       {edu.score && (
                         <span className="font-semibold text-zinc-900 not-italic">
                           {' '}
-                          (GPA: {edu.score})
+                          ({edu.score})
                         </span>
                       )}
                     </div>
